@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+#hero {
+  height: 100vh;
+  background: url(../images/mobile/image-hero.jpg) no-repeat center center/cover;
+  color: #fff;
+}
+
+#hero header {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero header .open-menu,
+#hero header .close-menu {
+  width: 25px;
+}
+
+#hero header .logo {
+  width: 140px;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#hero header nav {
+  display: none;
+  position: fixed;
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+}
+
+#hero header nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#hero header nav ul {
+  margin: 5rem 0;
+}
+
+#hero header nav ul a {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#hero header nav ul a:after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+#hero header nav ul a:hover:after {
+  width: 30px;
+}
+
+#hero header nav.menu {
+  display: block;
+}
+
+#hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70vh;
+}
+
+#hero .hero-content h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 2px solid #fff;
+  padding: 1rem;
+  line-height: 1;
+}
+
+#about {
+  padding-top: 6rem;
+}
+
+#about .right p {
+  color: dimgray;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+}
+
+#creation {
+  text-align: center;
+}
+
+#creation .desktop {
+  display: none;
+}
+
+#creation .items > div {
+  text-align: left;
+  position: relative;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#creation .items > div div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.795)), to(transparent));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.795), transparent);
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#creation .items > div h3 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+  z-index: 2;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+#creation .items > div:hover div {
+  background: rgba(255, 255, 255, 0.493);
+}
+
+#creation .items > div:hover h3 {
+  color: black;
+}
+
+#creation .btn {
+  display: inline-block;
+  margin: 1rem 0;
+  color: #000;
+  font-family: 'Alata', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: .5rem 2rem;
+  border: 1px solid black;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+  font-weight: 400;
+}
+
+#creation .btn:hover {
+  background-color: black;
+  color: #fff;
+}
+
+#creation .btn-desk {
+  display: none;
+}
+
+footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+footer .logo {
+  width: 140px;
+  margin: auto;
+}
+
+footer .social {
+  margin-bottom: 1rem;
+}
+
+footer .social a {
+  display: inline-block;
+  padding: .5rem 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  position: relative;
+  font-family: 'Alata', sans-serif;
+}
+
+footer .social a:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+footer .social a:hover:after {
+  width: 30px;
+}
+
+footer .social img {
+  width: 30px;
+  margin: 0 .5rem;
+  position: relative;
+  display: inline-block;
+}
+
+footer ul {
+  margin: 1rem 0 3rem 0;
+}
+
+footer ul a {
+  display: inline-block;
+  padding: .5rem 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  position: relative;
+  font-family: 'Alata', sans-serif;
+}
+
+footer ul a:after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+footer ul a:hover:after {
+  width: 30px;
+}
+
+footer p {
+  font-family: 'Alata', sans-serif;
+}
+
+@media only screen and (min-width: 768px) {
+  #hero .hero-content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    padding: 9rem !important;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  .container {
+    max-width: 1280px;
+    margin: auto;
+  }
+  #hero {
+    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/desktop/image-hero.jpg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-hero.jpg) no-repeat center center/cover;
+  }
+  #hero .open-menu,
+  #hero .close-menu,
+  #hero nav .logo {
+    display: none;
+  }
+  #hero header .logo {
+    width: 200px;
+  }
+  #hero header nav {
+    display: block;
+    width: unset;
+    height: unset;
+    position: unset;
+    background: unset;
+    padding: 3rem 0;
+  }
+  #hero header nav ul {
+    margin: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #hero header nav ul a {
+    margin: 0 0 0 2rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+  }
+  #hero header nav ul a:after {
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .hero-content h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 50%;
+    font-size: 5rem !important;
+  }
+  #about .container {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  #about .right {
+    background: #fff;
+    position: absolute;
+    width: 50%;
+    padding: 3rem;
+    right: 0;
+    bottom: -4rem;
+  }
+  #about .right p {
+    font-size: 1.3rem;
+  }
+  #creation .mobile {
+    display: none;
+  }
+  #creation .desktop {
+    display: block;
+  }
+  #creation .items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+  }
+  #creation .items > div div {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.795)), to(transparent));
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.795), transparent);
+  }
+  #creation .btn {
+    display: none;
+  }
+  #creation .btn-desk {
+    display: block;
+    margin: 1rem 0;
+    color: #000;
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    -webkit-transition: .5s all ease;
+    transition: .5s all ease;
+    font-weight: 400;
+  }
+  #creation .btn-desk:hover {
+    background-color: black;
+    color: #fff;
+  }
+  #creation .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container .logo {
+    width: 200px;
+    margin-left: 0;
+  }
+  footer .container div:first-child {
+    text-align: left;
+  }
+  footer .container div:first-child ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .container div:first-child ul li {
+    padding: 0 1rem 0 0;
+  }
+  footer .container div:last-child .social {
+    text-align: right;
+  }
+}
+/*# sourceMappingURL=main.css.map */
