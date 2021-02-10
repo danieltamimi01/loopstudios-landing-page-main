@@ -420,6 +420,11 @@ footer p {
         grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 2rem;
   }
+  #creation .items > div h3 {
+    font-size: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
   #creation .items > div div {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.795)), to(transparent));
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.795), transparent);

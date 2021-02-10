@@ -372,6 +372,11 @@ footer {
             grid-template-columns: repeat(4, 1fr);
             grid-column-gap: 2rem;
             &>div {
+                h3 {
+                    font-size: 2rem;
+                    bottom: 2rem;
+                    left: 2rem;
+                }
                 div {
                     background: linear-gradient(360deg, rgba(0, 0, 0, 0.795), transparent);
                 }
